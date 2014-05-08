@@ -28,9 +28,32 @@ A script that takes a row or column of numbers (no words), and adds them togethe
 
 ### Installation
 
-Check this repository out under `~/Library/Application Support/BBEdit/Packages`. You may need to create the Packages directory if it does not already exist.
+Go to the BBEdit Application support directory in Terminal.app or iTerm:
 
-If you store your BBEdit preferences on DropBox, use `~/DropBox/Application Support/BBEdit/Packages` instead.
+    $ cd ~/Library/Application\ Support/BBEdit
+
+If you're using DropBox to store your BBEdit configuration and support, use this instead:
+
+    $ cd ~/DropBox/Application Support/BBEdit
+
+If you don't have a `Packages` directory, create one:
+
+    $ mkdir Packages
+
+Go into the `Packages` directory
+
+    $ cd Packages
+
+Check out this repository:
+
+    $ git clone https://github.com/base10/utility_filters.git utility_filters.bbpackage
+
+Then, quit and restart BBEdit. You'll find the Text Filters under the `Text > Apply Text Filter` menu in a section called `utility_filters`.
+
+You can update the filters at any time by returning to this checkout and refreshing the clone:
+
+    $ cd utility_filters.bbpackage
+    $ git pull
 
 ### Author
 
